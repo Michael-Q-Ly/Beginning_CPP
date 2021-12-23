@@ -1,4 +1,4 @@
-#Section 6 Challenge
+# Section 6 Challenge
 
 For this assignment, modify the constants source code so that,
 instead of having just one rate for rooms, you have two. For

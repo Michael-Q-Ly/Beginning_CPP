@@ -1,4 +1,4 @@
-#Section 4 Challenge
+# Section 4 Challenge
 
 Create a C++ program that asks the user for their favorite number between 1 and 100,
 then read this number from the console

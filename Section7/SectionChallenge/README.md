@@ -1,4 +1,4 @@
-#Section 7 Challenge
+# Section 7 Challenge
 
 Write a C++ program as follows:
 
