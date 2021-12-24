@@ -6,8 +6,11 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # PARTICULAR PURPOSE.
 
 # This program built for i686-pc-msys
+ 
+make.exe: *** No rule to make target `all'.  Stop.
+ 
 
-# Make data base, printed on Wed Dec 22 19:07:58 2021
+# Make data base, printed on Fri Dec 24 16:19:17 2021
 
 # Variables
 
@@ -17,8 +20,6 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 ?F = $(notdir $?)
 # environment
 KISYS3DMOD = C:\Program Files\KiCad\share\kicad\modules\packages3d
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -37,16 +38,12 @@ HOMEDRIVE = C:
 ^D = $(patsubst %/,%,$(dir $^))
 # makefile
 CURDIR := /c/Users/Micha/OneDrive/Documents/Learning/uDemy/C++/Beginner
-# makefile
-SHELL = /bin/sh
-# environment
-CONFIG_SITE = C:/Program Files/Git/mingw64/etc/config.site
+# default
+SHELL := /bin/sh
 # environment
 WINDIR = C:\WINDOWS
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# environment
-_ = C:/Users/Micha/AppData/Local/Programs/Microsoft VS Code/Code.exe
 # environment
 ONEDRIVE = C:\Users\Micha\OneDrive - The University of Texas at Dallas
 # environment
@@ -61,23 +58,16 @@ FPS_BROWSER_USER_PROFILE_STRING = Default
 TMP = /tmp
 # environment
 VSCODE_VERBOSE_LOGGING = true
- 
-make.exe: *** No rule to make target `all'.  Stop.
- 
 # environment
 PROGRAMW6432 = C:\Program Files
 # environment
-INFOPATH = C:\Program Files\Git\usr\local\info;C:\Program Files\Git\usr\share\info;C:\Program Files\Git\usr\info;C:\Program Files\Git\share\info
-# environment
 PROGRAMDATA = C:\ProgramData
 # environment
-MSYSTEM_CHOST = x86_64-w64-mingw32
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-483358fe-d7e3-4cd2-9b7a-478404f4b213-sock
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-d5b08223-e279-4590-a97c-e264755a253f-sock
+VSCODE_CWD = C:\Users\Micha\AppData\Local\Programs\Microsoft VS Code
 # environment
-VSCODE_CWD = C:\Users\Micha\OneDrive\Documents\Learning\LinkedIn\ProgrammingFoundations_Algorithms
-# environment
-PATH = /c/Users/Micha/bin:/c/Program Files/Git/mingw64/bin:/c/Program Files/Git/usr/local/bin:/c/Program Files/Git/usr/bin:/c/Program Files/Git/usr/bin:/c/Program Files/Git/mingw64/bin:/c/Program Files/Git/usr/bin:/c/Users/Micha/bin:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/c/Program Files/Intel/WiFi/bin:/c/Program Files/Common Files/Intel/WirelessCommon:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Git/cmd:/c/Program Files (x86)/ZeroTier/One:/c/Users/Micha/AppData/Local/Programs/Python/Python36/Scripts:/c/Users/Micha/AppData/Local/Programs/Python/Python36:/c/Users/Micha/AppData/Local/Programs/Python/Python37/Scripts:/c/Users/Micha/AppData/Local/Programs/Python/Python37:/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin:/c/Users/Micha/AppData/Local/Programs/Python/Python39/Scripts:/c/Users/Micha/AppData/Local/Programs/Python/Python39:/c/Users/Micha/AppData/Local/Microsoft/WindowsApps:/c/Users/Micha/AppData/Local/GitHubDesktop/bin:/c/Users/Micha/AppData/Local/Programs/Microsoft VS Code/bin:/c/Users/Micha/AppData/Local/atom/bin:/c/Users/Micha/AppData/Local/Microsoft/WindowsApps:/mingw/bin:/usr/bin:/c/intelFPGA/20.1/modelsim_ase/win32aloem:/c/intelFPGA_lite/20.1/modelsim_ase/win32aloem:/c/Users/Micha/AppData/Local/gitkraken/bin:/c/Program Files/Git/usr/bin/vendor_perl:/c/Program Files/Git/usr/bin/core_perl
+PATH = /c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/c/WINDOWS/System32/OpenSSH/:/c/Program Files/Intel/WiFi/bin/:/c/Program Files/Common Files/Intel/WirelessCommon/:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Git/cmd:/c/Program Files (x86)/ZeroTier/One/:/c/Users/Micha/AppData/Local/Programs/Python/Python36/Scripts/:/c/Users/Micha/AppData/Local/Programs/Python/Python36/:/c/Users/Micha/AppData/Local/Programs/Python/Python37/Scripts/:/c/Users/Micha/AppData/Local/Programs/Python/Python37/:/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin:/c/Users/Micha/AppData/Local/Programs/Python/Python39/Scripts/:/c/Users/Micha/AppData/Local/Programs/Python/Python39/:/c/Users/Micha/AppData/Local/Microsoft/WindowsApps:/c/Users/Micha/AppData/Local/GitHubDesktop/bin:/c/Users/Micha/AppData/Local/Programs/Microsoft VS Code/bin:/c/Users/Micha/AppData/Local/atom/bin:/c/Users/Micha/AppData/Local/Microsoft/WindowsApps:/mingw/bin:/usr/bin:/c/intelFPGA/20.1/modelsim_ase/win32aloem:/c/intelFPGA_lite/20.1/modelsim_ase/win32aloem:/c/Users/Micha/AppData/Local/gitkraken/bin
 # environment
 LM_LICENSE_FILE = C:\lscc\radiant\2.2\license\license.dat
 # environment
@@ -87,49 +77,31 @@ PROCESSOR_ARCHITECTURE = x86
 # environment
 USERPROFILE = C:\Users\Micha
 # environment
-MSYSTEM_CARCH = x86_64
-# environment
-EXEPATH = C:\Program Files\Git
-# environment
 !C: = c:\Users\Micha\OneDrive\Documents\Learning\uDemy\C++\Beginner
 # environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
-PLINK_PROTOCOL = ssh
-# environment
 SOPC_KIT_NIOS2 = C:\intelFPGA_lite\20.1\nios2eds
-# environment
-MSYSTEM_PREFIX = C:/Program Files/Git/mingw64
 # environment
 VSCODE_LOG_STACK = false
 # environment
 NUMBER_OF_PROCESSORS = 4
 # environment
 ELECTRON_RUN_AS_NODE = 1
-# environment
-ORIGINAL_TEMP = C:/Users/Micha/AppData/Local/Temp
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = needs-to-be-defined
-# environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14420_JBXLRBCGTAWVSXRH
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_24468_LBGQTJLJOSKDHCCU
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-ORIGINAL_PATH = C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Micha\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Git\cmd;C:\Program Files (x86)\ZeroTier\One;C:\Users\Micha\AppData\Local\Programs\Python\Python36\Scripts;C:\Users\Micha\AppData\Local\Programs\Python\Python36;C:\Users\Micha\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Micha\AppData\Local\Programs\Python\Python37;C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin;C:\Users\Micha\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\Micha\AppData\Local\Programs\Python\Python39;C:\Users\Micha\AppData\Local\Microsoft\WindowsApps;C:\Users\Micha\AppData\Local\GitHubDesktop\bin;C:\Users\Micha\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Micha\AppData\Local\atom\bin;C:\Users\Micha\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;C:\MinGW\msys\1.0\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\Users\Micha\AppData\Local\gitkraken\bin
-# environment
 COMPUTERNAME = MICHAEL-QV-LY
-# environment
-PWD = C:/Users/Micha/OneDrive/Documents/Learning/LinkedIn/ProgrammingFoundations_Algorithms
 # environment
 PROGRAMFILES = C:\Program Files (x86)
 # environment
 DRIVERDATA = C:\Windows\System32\Drivers\DriverData
-# environment
-PKG_CONFIG_PATH = C:\Program Files\Git\mingw64\lib\pkgconfig;C:\Program Files\Git\mingw64\share\pkgconfig
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -137,13 +109,9 @@ USERNAME = Micha
 # environment
 PUBLIC = C:\Users\Public
 # environment
-MANPATH = C:\Program Files\Git\mingw64\local\man;C:\Program Files\Git\mingw64\share\man;C:\Program Files\Git\usr\local\man;C:\Program Files\Git\usr\share\man;C:\Program Files\Git\usr\man;C:\Program Files\Git\share\man
-# environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
 # environment
 HOME = /c/Users/Micha
-# environment
-VSCODE_CLI = 1
 # environment
 VSCODE_CODE_CACHE_PATH = C:\Users\Micha\AppData\Roaming\Code\CachedData\899d46d82c4c95423fb7e10e68eba52050e30ba3
 # environment
@@ -158,10 +126,6 @@ ONEDRIVECONSUMER = C:\Users\Micha\OneDrive
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
 USERDOMAIN = MICHAEL-QV-LY
-# environment
-HOSTNAME = Michael-QV-Ly
-# environment
-SSH_ASKPASS = C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -169,17 +133,11 @@ MAKECMDGOALS := all
 # environment
 KISYSMOD = C:\Program Files\KiCad\share\kicad\modules
 # environment
-SHLVL = 2
-# environment
-ACLOCAL_PATH = C:\Program Files\Git\mingw64\share\aclocal;C:\Program Files\Git\usr\share\aclocal
-# environment
 ONEDRIVECOMMERCIAL = C:\Users\Micha\OneDrive - The University of Texas at Dallas
 # default
 MAKE_VERSION := 3.81
 # environment
 KICAD_SYMBOL_DIR = C:\Program Files\KiCad\share\kicad\library
-# environment
-MINGW_CHOST = x86_64-w64-mingw32
 # environment
 __PSLOCKDOWNPOLICY = 0
 # environment
@@ -194,12 +152,8 @@ PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\Wi
 MAKE_COMMAND := make.exe
 # environment
 PROCESSOR_ARCHITEW6432 = AMD64
-# environment
-OLDPWD = C:/Users/Micha/OneDrive/Documents/Learning/LinkedIn/ProgrammingFoundations_Algorithms/01_Introduction
 # default
 .VARIABLES := 
-# environment
-TMPDIR = /tmp
 # automatic
 *F = $(notdir $*)
 # environment
@@ -219,13 +173,9 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-ORIGINAL_TMP = C:/Users/Micha/AppData/Local/Temp
-# environment
 SYSTEMROOT = C:\WINDOWS
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# environment
-MINGW_PREFIX = C:/Program Files/Git/mingw64
 # automatic
 +F = $(notdir $+)
 # environment
@@ -234,8 +184,6 @@ APPDATA = C:\Users\Micha\AppData\Roaming
 TEMP = /tmp
 # environment
 COMSPEC = C:\WINDOWS\system32\cmd.exe
-# environment
-MSYSTEM = MINGW64
 # default
 MAKEFILES := 
 # environment
@@ -265,17 +213,15 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-TERM = xterm-256color
+TERM = cygwin
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 14420
-# environment
-MINGW_PACKAGE_PREFIX = mingw-w64-x86_64
+VSCODE_PID = 24468
 # environment
 USERDOMAIN_ROAMINGPROFILE = MICHAEL-QV-LY
 # variable set hash-table stats:
-# Load=130/1024=13%, Rehash=0, Collisions=11/150=7%
+# Load=103/1024=10%, Rehash=0, Collisions=11/122=9%
 
 # Pattern-specific Variable Values
 
@@ -283,9 +229,9 @@ USERDOMAIN_ROAMINGPROFILE = MICHAEL-QV-LY
 
 # Directories
 
-# . (device -11664, inode 2431990): 10 files, no impossibilities.
+# . (device -11664, inode 2431990): 12 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -356,8 +302,7 @@ GNUmakefile:
 # # of strcache buffers: 0
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
- 
 
-# Finished Make data base on Wed Dec 22 19:07:58 2021
+# Finished Make data base on Fri Dec 24 16:19:17 2021
 
  
