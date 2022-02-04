@@ -27,8 +27,8 @@ int main() {
 			case 'P': // Print the numbers in the list
 				if ( ( userVector.size() ) ) {
 					std::cout << "[ " ;
-					for ( size_t i{0} ; i <  userVector.size() ; i++ ) {
-						std::cout << userVector.at( i ) << " ";
+					for ( auto num : userVector ) {
+						std::cout << num << " ";
 					}
 					std::cout << "]" << std::endl ;
 				}
@@ -57,8 +57,8 @@ int main() {
 					// Find the mean of the numbers
 					double sum {} ;
 					double avg {} ;
-					for ( size_t i {} ; i < userVector.size() ; i++ ) {
-						sum += userVector.at( i ) ;
+					for ( auto num : userVector ) {
+						sum += num ;
 					}
 					avg = sum / userVector.size() ;
 					std::cout << "The mean of your numbers is " << avg << std::endl ;
