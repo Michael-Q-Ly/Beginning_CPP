@@ -4,16 +4,16 @@
 #include <iostream>
 #include <vector>
 
-void display_menu( void ) ;
-void get_user_selection( char &selection ) ;
-void print_numbers( std::vector <double> const userVector ) ;
-void add_number( std::vector <double> &userVector ) ;
-double calc_mean( std::vector <double> &userVector ) ;
-void display_mean( std::vector <double> &userVector ) ;
-void display_smallest_number ( std::vector <double> &userVector ) ;
-void display_largest_number ( std::vector <double> &userVector ) ;
-void display_error( void ) ;
-void exit_program( void ) ;
+void display_menu		( void ) ;
+void get_user_selection		( char &selection ) ;
+void print_numbers		( std::vector <double> const userVector ) ;
+void add_number			( std::vector <double> &userVector ) ;
+double calc_mean		( std::vector <double> const &userVector ) ;
+void display_mean		( std::vector <double> const &userVector ) ;
+void display_smallest_number 	( std::vector <double> const &userVector ) ;
+void display_largest_number 	( std::vector <double> const &userVector ) ;
+void display_error		( void ) ;
+void exit_program		( void ) ;
 
 int main() {
 
@@ -99,7 +99,7 @@ void add_number( std::vector <double> &userVector ) {
 }
 
 /* Calculate the mean of the nonempty list */
-double calc_mean( std::vector <double> &userVector ) {
+double calc_mean( std::vector <double> const &userVector ) {
 	double sum {} ;
 	for ( auto num : userVector ) {
 		sum += num ;
@@ -108,7 +108,7 @@ double calc_mean( std::vector <double> &userVector ) {
 }
 	
 /* If the user chooses 'm' or 'M' in a nonempty list, get the mean then show it, else show an error */
-void display_mean( std::vector <double> &userVector ) {
+void display_mean( std::vector <double> const &userVector ) {
 	if ( userVector.size() ) {
 		double average ;
 		average = calc_mean( userVector ) ;
@@ -120,7 +120,7 @@ void display_mean( std::vector <double> &userVector ) {
 }
 
 /* If the user chooses 's' or 'S', show the smallest number, else show an error if the list is empty */
-void display_smallest_number ( std::vector <double> &userVector ) {
+void display_smallest_number ( std::vector <double> const &userVector ) {
 	if ( userVector.size() ) {
 		double smallest {userVector.at( 0 )} ;
 		for ( auto num : userVector ) {
@@ -139,7 +139,7 @@ void display_smallest_number ( std::vector <double> &userVector ) {
 }
 
 /* If the user chooses 'l' or 'L', show the largest number, else show an error if the list is empty */
-void display_largest_number ( std::vector <double> &userVector ) {
+void display_largest_number ( std::vector <double> const &userVector ) {
 	if ( userVector.size() ) {
 		double largest {userVector.at( 0 )} ;
 		for ( auto num : userVector ) {
