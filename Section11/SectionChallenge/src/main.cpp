@@ -12,6 +12,7 @@ void handle_add_number		( std::vector <double> &userVector ) ;
 void handle_mean		( std::vector <double> const &userVector ) ;
 void handle_smallest_number 	( std::vector <double> const &userVector ) ;
 void handle_largest_number 	( std::vector <double> const &userVector ) ;
+void handle_find_number		( std::vector <double> const &userVector ) ;
 void handle_invalid_choice	( void ) ;
 void handle_exit_program	( void ) ;
 
@@ -20,7 +21,7 @@ void get_display		( std::vector <double> const &userVector ) ;
 double get_mean			( std::vector <double> const &userVector ) ;
 double get_smallest		( std::vector <double> const &userVector ) ;
 double get_largest		( std::vector <double> const &userVector ) ;
-
+bool find_number		( std::vector <double> const &userVector, double target ) ;
 
 int main() {
 
@@ -39,6 +40,7 @@ int main() {
 			case 'M':	handle_mean( userVector ) ;		break ;
 			case 'S':	handle_smallest_number( userVector ) ;	break ;
 			case 'L':	handle_largest_number( userVector ) ;	break ;
+			case 'F':	handle_find_number( userVector ) ;	break ;
 			case 'Q':	handle_exit_program() ;			break ;
 			default:	handle_invalid_choice() ;
 		}
@@ -61,6 +63,7 @@ void display_menu( void ) {
 	std::cout << "M - Display mean of the numbers" << std::endl ;
 	std::cout << "S - Display the smallest number" << std::endl ;
 	std::cout << "L - Display the largest number" << std::endl ;
+	std::cout << "F - Find a number" << std::endl ;
 	std::cout << "Q - Quit" << std::endl ;
 }
 
@@ -151,6 +154,23 @@ void handle_largest_number ( std::vector <double> const &userVector ) {
 }
 
 /**
+ * Finds a number in our vector
+ */
+void handle_find_number( std::vector <double> const &userVector ) {
+	double target {} ;
+	std::cout << "Enter the number to find: " ;
+	std::cin  >> target ;
+	
+	std::cout << std::endl ;
+	if ( find_number( userVector, target ) ) {
+		std::cout << target << " was found!" << std::endl ;
+	}
+	else {
+		std::cout << target << " was not found!" << std::endl ;
+	}
+}
+
+/**
  * If the user chooses an option not in the list,
  * display an error
  */
@@ -226,5 +246,19 @@ double get_largest ( std::vector <double> const &userVector ) {
 	}
 
 	return largest ;
+}
+
+/**
+ * Gets a target number from the user and then parses the
+ * vector to see if that number exists in the vector. Returns
+ * true if it is found, otherwise it returns false by default
+ */
+bool find_number( std::vector <double> const &userVector, double target ) {
+	for ( auto num : userVector ) {
+		if ( num == target ) {
+			return true ;
+		}
+	}
+	return false ;
 }
 
