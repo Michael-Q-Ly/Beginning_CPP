@@ -6,7 +6,7 @@ and how many times they watched each movie.
 
 The program must support the following:
 
-class Movie - mocdels a movie which includes
+class Movie - models a movie which includes
 - movie name
 - movie rating (G, PG, PG-13, R)
 - watched - the number of times the movie has been watched
