@@ -1,0 +1,17 @@
+# File Name	: Makefile
+# Author	: Michael Ly
+# Date		: Mar 17, 2022
+# Description	: Makes source code for StaticClass
+
+SUBDIRS = src
+
+.PHONY: all
+all: $(SUBDIRS)
+
+.PHONY: $(SUBDIRS)
+$(SUBDIRS):
+	$(MAKE) -C $@
+
+.PHONY: clean
+clean:
+	rm -rf *.o *.exe
