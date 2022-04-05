@@ -35,7 +35,7 @@ bool Movies::add_movie( std::string name, std::string rating, int watched ) {
 	// You implement this method
 
 	// For every movie in movies, check the name of the movie against the vector
-	for ( Movie movie : movies ) {
+	for ( Movie const &movie : movies ) {                                           // Protect referenced data
 		if ( movie.get_name() == name ) {
 			return false ;
 		}
@@ -61,16 +61,17 @@ bool Movies::add_movie( std::string name, std::string rating, int watched ) {
 bool Movies::increment_watched( std::string name ) {
 	// You implement this method
 
-	size_t idx {0} ;
-	for ( Movie movie : movies ) {
+	// size_t idx {0} ;
+	for ( Movie &movie : movies ) {
 		if ( movie.get_name() == name ) {
-			int watched ;
-			watched = movie.get_watched() ;
-			movie.set_watched( ++watched ) ;
-			movies.at( idx ) = movie ;
+			// int watched ;
+			// watched = movie.get_watched() ;
+			// movie.set_watched( ++watched ) ;
+			// movies.at( idx ) = movie ;
+                        movie.increment_watched() ;
 			return true ;
 		}
-		idx++ ;
+		// idx++ ;
 	}
 	
 	return false ;
@@ -86,10 +87,15 @@ bool Movies::increment_watched( std::string name ) {
 void Movies::display( void ) const {
 	// You implement this method
 
-	std::cout << "Printing movies:" << std::endl ;
-	for ( Movie movie : movies ) {
-		std::cout << movie.get_name() << ", " ;
-		std::cout << movie.get_rating() << ", " ;
-		std::cout << movie.get_watched() << std::endl ;
+	if ( !movies.size() ) {
+		std::cout << "Sorry, there are no movies to display right now." << std::endl ;
+        }
+	else {
+		std::cout << "\n\nPrinting Movies:" << std::endl ;
+		std::cout << "============================================" << std::endl ;
+		for ( Movie const &movie : movies ) {
+			movie.display() ;
+			std::cout << "============================================" << std::endl ;
+		}
 	}
 }
