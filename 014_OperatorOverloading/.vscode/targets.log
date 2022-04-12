@@ -1,0 +1,344 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for x86_64-pc-cygwin
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Apr 12 14:26:47 2022
+
+# Variables
+
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\Micha
+# environment
+LOCALAPPDATA = C:\Users\Micha\AppData\Local
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-1864b2ae-d440-4a61-bb3d-5bedb65d5af6-sock
+# environment
+VSCODE_CWD = C:\Users\Micha\OneDrive\Documents
+# environment
+SYSTEMROOT = C:\WINDOWS
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_22672_ZEHLHIYUSTCHZDYW
+# environment
+ONEDRIVECOMMERCIAL = C:\Users\Micha\OneDrive - The University of Texas at Dallas
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /cygdrive/c/Users/Micha/OneDrive/Documents
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+HOSTNAME = Michael-QV-Ly
+# environment
+OLDPWD = /home/Micha
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\Micha\AppData\Roaming\Code\CachedData\8dfae7a5cd50421d10cd99cb873990460525a898
+# environment
+PROFILEREAD = true
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = /tmp
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# environment
+CONFIGSETROOT = C:\WINDOWS\ConfigSetRoot
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\Micha\OneDrive - The University of Texas at Dallas
+# makefile
+CURDIR := /cygdrive/c/Users/Micha/OneDrive/Documents/Learning/uDemy/C++/Beginner/014_OperatorOverloading
+# environment
+LM_LICENSE_FILE = C:\lscc\radiant\2.2\license\license.dat
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+!C: = c:\Users\Micha\OneDrive\Documents\Learning\uDemy\C++\Beginner\014_OperatorOverloading
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile
+MAKEFILE_LIST := 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+MINTTY_SHORTCUT = /cygdrive/c/ProgramData/Microsoft/Windows/Start Menu/Programs/Cygwin/Cygwin64 Terminal.lnk
+# environment
+VSCODE_PID = 22672
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+__PSLOCKDOWNPOLICY = 0
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\Micha\OneDrive
+# default
+MAKE_HOST := x86_64-pc-cygwin
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+INFOPATH = /usr/local/info:/usr/share/info:/usr/info
+# makefile
+SHELL = /bin/sh
+# environment
+ORIGINAL_PATH = /cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/c/Program Files/Intel/WiFi/bin:/cygdrive/c/Program Files/Common Files/Intel/WirelessCommon:/cygdrive/c/Program Files/Git/cmd:/cygdrive/c/Program Files (x86)/ZeroTier/One:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Users/Micha/AppData/Local/Programs/Python/Python36/Scripts:/cygdrive/c/Users/Micha/AppData/Local/Programs/Python/Python36:/cygdrive/c/Users/Micha/AppData/Local/Programs/Python/Python37/Scripts:/cygdrive/c/Users/Micha/AppData/Local/Programs/Python/Python37:/cygdrive/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin:/cygdrive/c/Users/Micha/AppData/Local/Programs/Python/Python39/Scripts:/cygdrive/c/Users/Micha/AppData/Local/Programs/Python/Python39:/cygdrive/c/Users/Micha/AppData/Local/Microsoft/WindowsApps:/cygdrive/c/Users/Micha/AppData/Local/GitHubDesktop/bin:/cygdrive/c/Users/Micha/AppData/Local/Programs/Microsoft VS Code/bin:/cygdrive/c/Users/Micha/AppData/Local/atom/bin:/cygdrive/c/Users/Micha/AppData/Local/Microsoft/WindowsApps:/bi::/cygdrive/c/MinGW/bin:/cygdrive/c/MinGW/msys/1.0/bin:/cygdrive/c/intelFPGA/20.1/modelsim_ase/win32aloem:/cygdrive/c/intelFPGA_lite/20.1/modelsim_ase/win32aloem:/cygdrive/c/Users/Micha/AppData/Local/gitkraken/bin
+# environment
+HOMEPATH = \Users\Micha
+# environment
+PLATFORMIO_CALLER = vscode
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 2
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /usr/local/bin:/usr/bin:/cygdrive/c/WINDOWS/system32:/cygdrive/c/WINDOWS:/cygdrive/c/WINDOWS/System32/Wbem:/cygdrive/c/WINDOWS/System32/WindowsPowerShell/v1.0:/cygdrive/c/WINDOWS/System32/OpenSSH:/cygdrive/c/Program Files/Intel/WiFi/bin:/cygdrive/c/Program Files/Common Files/Intel/WirelessCommon:/cygdrive/c/Program Files/Git/cmd:/cygdrive/c/Program Files (x86)/ZeroTier/One:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Users/Micha/AppData/Local/Programs/Python/Python36/Scripts:/cygdrive/c/Users/Micha/AppData/Local/Programs/Python/Python36:/cygdrive/c/Users/Micha/AppData/Local/Programs/Python/Python37/Scripts:/cygdrive/c/Users/Micha/AppData/Local/Programs/Python/Python37:/cygdrive/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin:/cygdrive/c/Users/Micha/AppData/Local/Programs/Python/Python39/Scripts:/cygdrive/c/Users/Micha/AppData/Local/Programs/Python/Python39:/cygdrive/c/Users/Micha/AppData/Local/Microsoft/WindowsApps:/cygdrive/c/Users/Micha/AppData/Local/GitHubDesktop/bin:/cygdrive/c/Users/Micha/AppData/Local/Programs/Microsoft VS Code/bin:/cygdrive/c/Users/Micha/AppData/Local/atom/bin:/cygdrive/c/Users/Micha/AppData/Local/Microsoft/WindowsApps:/bi:.:/cygdrive/c/MinGW/bin:/cygdrive/c/MinGW/msys/1.0/bin:/cygdrive/c/intelFPGA/20.1/modelsim_ase/win32aloem:/cygdrive/c/intelFPGA_lite/20.1/modelsim_ase/win32aloem:/cygdrive/c/Users/Micha/AppData/Local/gitkraken/bin
+# environment
+COMPUTERNAME = MICHAEL-QV-LY
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+KICAD_SYMBOL_DIR = C:\Program Files\KiCad\share\kicad\library
+# environment
+TZ = America/Chicago
+# environment
+LOGONSERVER = \\MICHAEL-QV-LY
+# environment
+QSYS_ROOTDIR = C:\intelFPGA_lite\20.1\quartus\sopc_builder\bin
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = Micha
+# environment
+TERM_PROGRAM = mintty
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# environment
+PRINTER = Microsoft Print to PDF
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+KISYSMOD = C:\Program Files\KiCad\share\kicad\modules
+# environment
+NO_PROXY = 127.0.0.1
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = MICHAEL-QV-LY
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+PLATFORMIO_PATH = C:\Users\Micha\.platformio\penv\Scripts;C:\Users\Micha\.platformio\penv;C:\Users\Micha\.platformio\python3;C:\cygwin64\usr\local\bin;C:\cygwin64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Git\cmd;C:\Program Files (x86)\ZeroTier\One;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Users\Micha\AppData\Local\Programs\Python\Python36\Scripts;C:\Users\Micha\AppData\Local\Programs\Python\Python36;C:\Users\Micha\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Micha\AppData\Local\Programs\Python\Python37;C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin;C:\Users\Micha\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\Micha\AppData\Local\Programs\Python\Python39;C:\Users\Micha\AppData\Local\Microsoft\WindowsApps;C:\Users\Micha\AppData\Local\GitHubDesktop\bin;C:\Users\Micha\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Micha\AppData\Local\atom\bin;C:\Users\Micha\AppData\Local\Microsoft\WindowsApps;C:\cygwin64\bi;.;C:\MinGW\bin;C:\MinGW\msys\1.0\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\Users\Micha\AppData\Local\gitkraken\bin;C:\cygwin64\usr\local\bin;C:\cygwin64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Git\cmd;C:\Program Files (x86)\ZeroTier\One;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Users\Micha\AppData\Local\Programs\Python\Python36\Scripts;C:\Users\Micha\AppData\Local\Programs\Python\Python36;C:\Users\Micha\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Micha\AppData\Local\Programs\Python\Python37;C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin;C:\Users\Micha\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\Micha\AppData\Local\Programs\Python\Python39;C:\Users\Micha\AppData\Local\Microsoft\WindowsApps;C:\Users\Micha\AppData\Local\GitHubDesktop\bin;C:\Users\Micha\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Micha\AppData\Local\atom\bin;C:\Users\Micha\AppData\Local\Microsoft\WindowsApps;C:\cygwin64\bi;.;C:\MinGW\bin;C:\MinGW\msys\1.0\bin;C:\intelFPGA\20.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem;C:\Users\Micha\AppData\Local\gitkraken\bin
+# environment
+EXECIGNORE = *.dll
+# makefile
+.DEFAULT_GOAL := 
+# environment
+USER = Micha
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = MICHAEL-QV-LY
+# environment
+NUMBER_OF_PROCESSORS = 4
+# environment
+PUBLIC = C:\Users\Public
+# environment
+KICAD_TEMPLATE_DIR = C:\Program Files\KiCad\share\kicad\template
+# environment
+QUARTUS_ROOTDIR = C:\intelFPGA_lite\20.1\quartus
+# environment
+SOPC_KIT_NIOS2 = C:\intelFPGA_lite\20.1\nios2eds
+# environment
+_ = /cygdrive/c/Users/Micha/AppData/Local/Programs/Microsoft VS Code/Code.exe
+# environment
+APPDATA = C:\Users\Micha\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+LC_CTYPE = en_US.UTF-8
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PLATFORMIO_IDE = 2.4.3
+# environment
+HOME = /home/Micha
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = /tmp
+# environment
+TERM = xterm
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\d0699ae9dd658f775d43a34ec7b7cbfb-1.66.1-main-sock
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+KISYS3DMOD = C:\Program Files\KiCad\share\kicad\modules\packages3d
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+PROCESSOR_REVISION = 4e03
+# environment
+TERM_PROGRAM_VERSION = 3.5.2
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+# variable set hash-table stats:
+# Load=130/1024=13%, Rehash=0, Collisions=15/155=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 4162048624, inode 4503599627616077): 4 files, no impossibilities.
+
+# 4 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 11 / storage = 94 B / avg = 8 B
+# current buf: size = 8162 B / used = 94 B / count = 11 / avg = 8 B
+
+# strcache performance: lookups = 14 / hit rate = 21%
+# hash-table stats:
+# Load=11/8192=0%, Rehash=0, Collisions=0/14=0%
+# Finished Make data base on Tue Apr 12 14:26:47 2022
+
+ 
