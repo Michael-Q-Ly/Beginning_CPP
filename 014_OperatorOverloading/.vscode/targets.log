@@ -10,7 +10,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 make.exe: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Sun May  1 15:59:05 2022
+# Make data base, printed on Wed May  4 10:18:51 2022
 
 # Variables
 
@@ -19,6 +19,7 @@ make.exe: *** No rule to make target `all'.  Stop.
 # automatic
 ?F = $(notdir $?)
 # environment
+ 
 KISYS3DMOD = C:\Program Files\KiCad\share\kicad\modules\packages3d
 # makefile
 MAKEFLAGS = Rrqp
@@ -65,7 +66,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-840accab-7dd0-47ec-b850-2e460e100493-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-68ef44e8-6230-4092-b66c-c29054fe2781-sock
 # environment
 VSCODE_CWD = C:\Users\Micha\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -95,7 +96,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_24868_RMKZIODGSUCTUUMU
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18924_SOCMTFXKILELGCZN
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -194,8 +195,10 @@ MAKEFILES :=
 QUARTUS_ROOTDIR = C:\intelFPGA_lite\20.1\quartus
 # automatic
 <F = $(notdir $<)
+ 
 # environment
 PLATFORMIO_CALLER = vscode
+ 
 # environment
 LC_ALL = C
 # environment
@@ -223,7 +226,7 @@ TERM = cygwin
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 24868
+VSCODE_PID = 18924
 # environment
 USERDOMAIN_ROAMINGPROFILE = MICHAEL-QV-LY
 # variable set hash-table stats:
@@ -235,9 +238,9 @@ USERDOMAIN_ROAMINGPROFILE = MICHAEL-QV-LY
 
 # Directories
 
-# . (device -11664, inode 1294157): 7 files, no impossibilities.
+# . (device -11664, inode 1294157): 9 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -250,6 +253,7 @@ all:
 #  Command-line target.
 #  Implicit rule search has been done.
 #  File does not exist.
+ 
 #  File has not been updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
@@ -308,7 +312,8 @@ GNUmakefile:
 # # of strcache buffers: 0
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+ 
 
-# Finished Make data base on Sun May  1 15:59:05 2022
+# Finished Make data base on Wed May  4 10:18:51 2022
 
  
