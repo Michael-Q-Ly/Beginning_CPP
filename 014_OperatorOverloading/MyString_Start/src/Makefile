@@ -1,7 +1,7 @@
 # File Name		: Makefile
 # Author		: Michael Ly
 # Date			: Apr 11, 2022
-# Description	: Build of basic operator overloading program
+# Description		: Build of basic operator overloading program
 
 PROG = startingPoint
 CXX = g++

@@ -24,12 +24,12 @@ MyString::MyString( void )
 MyString::MyString( char const *s )
 	: str {nullptr} {
 		if ( s == nullptr ) {
-		str = new char[1] ;
-		*str = '\0' ;
+            str = new char[1] ;
+            *str = '\0' ;
 		}
 		else {
-		str = new char[std::strlen(s)+1] ;
-		std::strcpy( str, s ) ;
+            str = new char[std::strlen(s)+1] ;
+            std::strcpy( str, s ) ;
 		}
 }
 
@@ -66,15 +66,26 @@ MyString &MyString::operator=( MyString const &rhs ) {
 
 // Move assignment
 MyString &MyString::operator=( MyString &&rhs ) {
-	std::cout << "Using move assignment" << std::endl ;
-	if ( this == &rhs ) {
-		return *this ;
-	}
-	delete [] str ;
-	str = rhs.str ;
-	rhs.str = nullptr ;
-	return *this ;
+        std::cout << "Using move assignment" << std::endl ;
+        if ( this == &rhs ) {
+                return *this ;
+        }
+        delete [] this->str ;
+        this->str = rhs.str ;
+        rhs.str = nullptr ;
+        return *this ;
 }
+// Move assignment
+// MyString &MyString::operator=( MyString &&rhs ) {
+// 	std::cout << "Using move assignment" << std::endl ;
+// 	if ( this == &rhs ) {
+// 		return *this ;
+// 	}
+// 	delete [] str ;
+// 	str = rhs.str ;
+// 	rhs.str = nullptr ;
+// 	return *this ;
+// }
 
 #if defined( NOT_FRIEND )
 // Equality

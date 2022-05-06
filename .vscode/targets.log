@@ -7,9 +7,8 @@ make: *** No rule to make target 'all'.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Wed Apr 27 20:30:36 2022
+# Make data base, printed on Tue Jun 28 21:50:12 2022
 
 # Variables
 
@@ -26,8 +25,7 @@ VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Micha\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ee6e875f-ce62-40f6-9716-a24d1e3cb991-sock
- 
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-e5b8333b-c9a8-4ccd-989c-c8918e9a8532-sock
 # environment
 VSCODE_CWD = C:\Users\Micha\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -43,7 +41,7 @@ MAKE_COMMAND := make
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_10952_DGRMVVJLBJILPCVF
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14084_OXNONDKMEVWUENXM
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -57,7 +55,7 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Micha\AppData\Roaming\Code\CachedData\dfd34e8260c270da74b5c2d86d61aee4b6d56977
+VSCODE_CODE_CACHE_PATH = C:\Users\Micha\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
 LANG = C
 # default
@@ -77,7 +75,7 @@ LM_LICENSE_FILE = C:\lscc\radiant\2.2\license\license.dat
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -99,7 +97,7 @@ MAKEFILE_LIST :=
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 10952
+VSCODE_PID = 14084
 # environment
 CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5
 # environment
@@ -121,14 +119,11 @@ MAKE_HOST := x86_64-pc-cygwin
 # environment
 PROGRAMDATA = C:\ProgramData
 # default
- 
 SHELL := /bin/sh
 # environment
 HOMEPATH = \Users\Micha
- 
 # environment
 PLATFORMIO_CALLER = vscode
- 
 # default
 MAKECMDGOALS := all
 # environment
@@ -193,15 +188,10 @@ PROGRAMFILES(X86) = C:\Program Files (x86)
 NVCUDASAMPLES_ROOT = C:\ProgramData\NVIDIA Corporation\CUDA Samples\v11.5
 # environment
 USERDOMAIN_ROAMINGPROFILE = MQLY
- 
 # environment
- 
 NUMBER_OF_PROCESSORS = 4
- 
 # environment
- 
 PUBLIC = C:\Users\Public
- 
 # environment
 QUARTUS_ROOTDIR = C:\intelFPGA_lite\20.1\quartus
 # environment
@@ -215,7 +205,7 @@ PROCESSOR_ARCHITECTURE = AMD64
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-PLATFORMIO_IDE = 2.4.3
+PLATFORMIO_IDE = 2.5.0
 # environment
 HOME = /home/Micha
 # environment
@@ -225,15 +215,13 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = /cygdrive/c/Users/Micha/AppData/Local/Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\d0699ae9dd658f775d43a34ec7b7cbfb-1.66.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\d0699ae9dd658f775d43a34ec7b7cbfb-1.68.1-main-sock
 # environment
 TERM = xterm-256color
- 
 # default
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
- 
 # default
 SUFFIXES := 
 # environment
@@ -247,9 +235,7 @@ PROCESSOR_REVISION = 5e03
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
 # variable set hash-table stats:
- 
 # Load=111/1024=11%, Rehash=0, Collisions=17/135=13%
- 
 
 # Pattern-specific Variable Values
 
@@ -267,11 +253,8 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
 
 # Files
 
- 
 # Not a target:
- 
 Makefile:
- 
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
@@ -318,6 +301,6 @@ GNUmakefile:
 # strcache performance: lookups = 28 / hit rate = 10%
 # hash-table stats:
 # Load=25/8192=0%, Rehash=0, Collisions=0/28=0%
-# Finished Make data base on Wed Apr 27 20:30:36 2022
+# Finished Make data base on Tue Jun 28 21:50:12 2022
 
  
