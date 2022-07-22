@@ -114,25 +114,24 @@ bool operator!=( MyString const &lhs, MyString const &rhs ) {
 
 // Lexically less
 bool operator<( MyString const &lhs, MyString const &rhs ) {
-        // char *buff = new char[std::strlen( rhs.str ) +  1] ;
-        // std::strcpy( buff, rhs.str ) ;
-        for ( size_t i = 0 ; i < std::strlen( rhs.str ) ; i++ ) {
-                if (  *( lhs.str + i ) > *( rhs.str + i )  ) {
-                        return false ;
-                }
-        }
-        // delete [] buff ;
-        return true ;
+        // for ( size_t i = 0 ; i < std::strlen( rhs.str ) ; i++ ) {
+        //         if (  *( lhs.str + i ) > *( rhs.str + i )  ) {
+        //                 return false ;
+        //         }
+        // }
+        // return true ;
+        return ( std::strcmp( lhs.str, rhs.str ) < 0 ) ;
 }
 
 // Lexically greater
 bool operator>( MyString const &lhs, MyString const &rhs ) {
-        for ( size_t i = 0 ; i < std::strlen( rhs.str ) ; i++ ) {
-                if (  *( lhs.str ) < *( rhs.str )  ) {
-                        return false ;
-                }
-        }
-        return true ;
+        // for ( size_t i = 0 ; i < std::strlen( rhs.str ) ; i++ ) {
+        //         if (  *( lhs.str ) < *( rhs.str )  ) {
+        //                 return false ;
+        //         }
+        // }
+        // return true ;
+        return ( std::strcmp( lhs.str, rhs.str ) > 0 ) ;
 }
 
 // Concatenate
@@ -177,7 +176,7 @@ MyString &operator++( MyString &obj ) {
 // Post-increment; make uppercase
 MyString operator++( MyString &obj, int ) {
         MyString temp {obj} ;
-        operator++(obj) ;
+        ++obj ;
         return temp ;
 }
 
