@@ -65,15 +65,51 @@ bool Account::withdraw( double amount ) {
 /**
  * @fn                  get_balance
  * 
- * @Synopsis            Returns current balance of Account object
+ * @Synopsis            Gets Account object balance
  *
- * @Returns             double
+ * @Returns double      The balance of the Account object
  */
 /* ---------------------------------*/
 double Account::get_balance( void ) const {
         return balance ;
 }
 
+/* -------------------------------*/
+/**
+ * @Synopsis            Overloaded Account deposit operator
+ *
+ * @Param obj           The Account object
+ *
+ * @Returns Account     The Account object
+ */
+/* ---------------------------------*/
+double Account::operator+=( double const amount ) {
+        return Account::deposit( amount ) ;
+}
+
+/* -------------------------------*/
+/**
+ * @Synopsis            Overloaded Account withdraw operator
+ *
+ * @Param amount        Amount to withdraw from Account object
+ *
+ * @Returns double      Amount withdrawn from Account object
+ */
+/* ---------------------------------*/
+double Account::operator-=( double const amount ) {
+        return Account::withdraw( amount ) ;
+}
+
+/* -------------------------------*/
+/**
+ * @Synopsis            Overloaded output stream operator for Account class
+ *
+ * @Param os            The output stream
+ * @Param account       The Account object
+ *
+ * @Returns             The output stream of the Account name and balance
+ */
+/* ---------------------------------*/
 std::ostream &operator<<( std::ostream &os, Account const &account ) {
         os << "[Account: " << account.name << "; " << account.balance << "]" ;
         return os ;

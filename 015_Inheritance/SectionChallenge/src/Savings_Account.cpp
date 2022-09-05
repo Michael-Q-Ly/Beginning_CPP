@@ -26,18 +26,44 @@ Savings_Account::Savings_Account( std::string name, double balance, double int_r
  *
  * @Param amount        Will be incremented by amount * interest rate then deposited to savings account
  *
- * @Returns             bool - amount to deposit w/ interest rate
+ * @Returns bool        The amount of money deposited + interest
  */
 /* ---------------------------------*/
 bool Savings_Account::deposit( double amount) {
         amount += amount * ( int_rate / 100 ) ;
-        return Account::deposit( amount ) ;
+        return Account::deposit( amount  ) ;
+}
+
+/* -------------------------------*/
+/**
+ * @Synopsis            Overloaded Savings Account deposit operator
+ *
+ * @Param amount        Amount to be deposited
+ *
+ * @Returns double      Amount deposited to Savings Account object 
+ */
+/* ---------------------------------*/
+double Savings_Account::operator+=( double const amount ) {
+        return Savings_Account::deposit( amount  ) ;
+}
+
+/* -------------------------------*/
+/**
+ * @Synopsis            Overloaded Savings Account withdraw operator
+ *
+ * @Param amount        Amount to be withdrawn
+ *
+ * @Returns double      Amount withdrawn from Savings Account 
+ */
+/* ---------------------------------*/
+double Savings_Account::operator-=( double const amount ) {
+        return Account::withdraw( amount  ) ;
 }
 
 /* -------------------------------*/
 /**
  * @Synopsis            Friend that overloads the insertion operator for
- * \ savings account to display the savings account balance and interest rate
+ *                      \ savings account to display the savings account balance and interest rate
  *
  * @Param os            The output stream
  * @Param account       Savings account object     

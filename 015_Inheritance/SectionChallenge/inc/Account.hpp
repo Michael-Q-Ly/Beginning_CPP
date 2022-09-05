@@ -28,5 +28,7 @@ class Account {
                 bool deposit( double amount ) ;
                 bool withdraw( double amount) ;
                 double get_balance( void ) const ;
+                double operator+=( double const amount ) ;
+                double operator-=( double const amount ) ;
 } ;
 #endif /* _ACCOUNT_HPP_ */

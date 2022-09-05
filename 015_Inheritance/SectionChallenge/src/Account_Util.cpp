@@ -123,3 +123,120 @@ void withdraw( std::vector<Savings_Account> &accounts, double amount ) {
         }
 }
 
+// Helper functions for Checking Account class
+
+/* -------------------------------*/
+/**
+ * @Synopsis            Displays account objects in a vector of Checking Account objects
+ *
+ * @Param accounts      The Checking Account object to be displayed
+ */
+/* ---------------------------------*/
+void display( std::vector<Checking_Account> const &accounts ) {
+        std::cout << "\n==== Checking Account ================" << std::endl ;
+        for ( auto const &acc : accounts ) {
+                std::cout << acc << std::endl ;
+        }
+}
+
+/* -------------------------------*/
+/**
+ * @Synopsis            Deposits amount into a vector element of type Checking
+ *                      \ Account
+ *
+ * @Param accounts      Vector of Checking Account classes
+ * @Param amount        Amount of money to be deposited into the account vector
+ * \ element
+ */
+/* ---------------------------------*/
+void deposit( std::vector<Checking_Account> &accounts, double amount ) {
+        std::cout << "\n==== Depositing to Checking Account ================" << std::endl ;
+        for ( auto &acc : accounts ) {
+                if ( acc.deposit( amount ) ) {
+                        std::cout << "Deposited " << amount << " to " << acc << std::endl ;
+                }
+                else {
+                        std::cout << "Failed deposit of " << amount << " to " << acc << std::endl ;
+                }
+        }
+}
+
+/* -------------------------------*/
+/**
+ * @Synopsis            Withdraws money from a vector element of type Checking
+ *                      \ Account class
+ *
+ * @Param accounts      Vector of account classes
+ * @Param amount        Amount of money to withdraw from account vector
+ */
+/* ---------------------------------*/
+void withdraw( std::vector<Checking_Account> &accounts, double amount ) {
+        std::cout << "\n==== Withdrawing from Checking Account ================" << std::endl ;
+        for ( auto &acc : accounts ) {
+                if ( acc.withdraw( amount ) ) {
+                        std::cout << "Withdrew " << amount << " from " << acc << std::endl ;
+                }
+                else {
+                        std::cout << "Failed withdrawl of " << amount << " from " << acc << std::endl ;
+                }
+        }
+}
+
+// Helper functions for Trust Account class
+
+/* -------------------------------*/
+/**
+ * @Synopsis            Displays account objects in a vector of Trust Account objects
+ *
+ * @Param accounts      The Trust Account object to be displayed
+ */
+/* ---------------------------------*/
+void display( std::vector<Trust_Account> const &accounts ) {
+        std::cout << "\n==== Trust Account ================" << std::endl ;
+        for ( auto const &acc : accounts ) {
+                std::cout << acc << std::endl ;
+        }
+}
+
+/* -------------------------------*/
+/**
+ * @Synopsis            Deposits amount into a vector element of type Trust
+ *                      \ Account
+ *
+ * @Param accounts      Vector of Trust Account classes
+ * @Param amount        Amount of money to be deposited into the account vector
+ * \ element
+ */
+/* ---------------------------------*/
+void deposit( std::vector<Trust_Account> &accounts, double amount ) {
+        std::cout << "\n==== Depositing to Trust Account ================" << std::endl ;
+        for ( auto &acc : accounts ) {
+                if ( acc.deposit( amount ) ) {
+                        std::cout << "Deposited " << amount << " to " << acc << std::endl ;
+                }
+                else {
+                        std::cout << "Failed deposit of " << amount << " to " << acc << std::endl ;
+                }
+        }
+}
+
+/* -------------------------------*/
+/**
+ * @Synopsis            Withdraws money from a vector element of type Trust
+ *                      \ Account class
+ *
+ * @Param accounts      Vector of account classes
+ * @Param amount        Amount of money to withdraw from account vector
+ */
+/* ---------------------------------*/
+void withdraw( std::vector<Trust_Account> &accounts, double amount ) {
+        std::cout << "\n==== Withdrawing from Trust Account ================" << std::endl ;
+        for ( auto &acc : accounts ) {
+                if ( acc.withdraw( amount ) ) {
+                        std::cout << "Withdrew " << amount << " from " << acc << std::endl ;
+                }
+                else {
+                        std::cout << "Failed withdrawl of " << amount << " from " << acc << std::endl ;
+                }
+        }
+}
