@@ -5,12 +5,11 @@
  * @version 0.0.0
  * @date 2022-09-15
  */
-
 #include "Account.hpp"
 
 /* -------------------------------*/
 /**
- * @Synopsis            Account overloaded constructor
+ * @Brief               Account overloaded constructor
  *
  * @Param name          Name of account
  * @Param balance       Balance of Account
@@ -119,3 +118,16 @@ double Account::operator-=( double const amount ) {
 /* void Account::print( std::ostream &os ) const { */
 /* 	os << "In Account::print" << std::endl ; */
 /* } */
+
+/* -------------------------------*/
+/**
+ * @Brief		Prints Account information
+ *
+ * @Param os		Output stream of Account
+ */
+/* ---------------------------------*/
+void Account::print( std::ostream &os ) const {
+	os.precision( 2 ) ;
+	os << std::fixed ;
+	os << "[Account: " << name << ": " << balance << "]" ;
+}

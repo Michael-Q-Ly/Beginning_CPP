@@ -28,13 +28,7 @@ Checking_Account::Checking_Account( std::string name, double balance, double fla
  * @return		Was money deposited successfull?
  */
 bool Checking_Account::deposit( double amount ) {
-        if ( amount < 0 ) {
-                return false ;
-        }
-        else {
-                balance += amount ;
-                return true ;
-        }
+	return Account::deposit( amount ) ;
 }
 
 /* -------------------------------*/

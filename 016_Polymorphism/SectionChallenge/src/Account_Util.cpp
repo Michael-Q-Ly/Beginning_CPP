@@ -24,21 +24,6 @@ void display( std::vector<Account *> const &accounts ) {
 
 /* -------------------------------*/
 /**
- * @Brief		Friend of I_Printable interface for printing
- *
- * @Param os		Output stream with account details
- * @Param obj		Account object determined durring runtime
- *
- * @Returns		Output stream with Account class type details
- */
-/* ---------------------------------*/
-std::ostream &operator<<( std::ostream &os, I_Printable const &obj ) {
-	obj.print( os ) ;
-	return os ;
-}
-
-/* -------------------------------*/
-/**
  * @Brief               Deposits amount into a vector element of Account class
  *
  * @Param accounts      Vector of Account classes (including inherited Account classes)

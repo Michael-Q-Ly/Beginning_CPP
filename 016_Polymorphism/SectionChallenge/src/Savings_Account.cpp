@@ -29,9 +29,9 @@ Savings_Account::Savings_Account( std::string name, double balance, double int_r
  * @Returns bool        The amount of money deposited + interest
  */
 /* ---------------------------------*/
-bool Savings_Account::deposit( double amount) {
+bool Savings_Account::deposit( double amount ) {
         amount += amount * ( int_rate / 100 ) ;
-        return Account::deposit( amount  ) ;
+        return Account::deposit( amount ) ;
 }
 
 /* -------------------------------*/
@@ -44,13 +44,7 @@ bool Savings_Account::deposit( double amount) {
  */
 /* ---------------------------------*/
 bool Savings_Account::withdraw( double amount ) {
-        if ( balance - amount >= 0 ) {
-                balance -= amount ;
-                return true ;
-        }
-        else {
-                return false ;
-        }
+	return Account::withdraw( amount ) ;
 }
 
 /* -------------------------------*/
@@ -63,7 +57,7 @@ bool Savings_Account::withdraw( double amount ) {
  */
 /* ---------------------------------*/
 double Savings_Account::operator+=( double const amount ) {
-        return Savings_Account::deposit( amount  ) ;
+        return Savings_Account::deposit( amount ) ;
 }
 
 /* -------------------------------*/
@@ -76,7 +70,7 @@ double Savings_Account::operator+=( double const amount ) {
  */
 /* ---------------------------------*/
 double Savings_Account::operator-=( double const amount ) {
-        return Account::withdraw( amount  ) ;
+        return Account::withdraw( amount ) ;
 }
 
 /* -------------------------------*/

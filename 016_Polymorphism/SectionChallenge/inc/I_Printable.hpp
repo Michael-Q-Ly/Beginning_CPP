@@ -13,6 +13,7 @@ class I_Printable {
 		friend std::ostream &operator<<( std::ostream &os, I_Printable const &obj ) ;
 	public:
 		virtual void print( std::ostream &os ) const = 0 ;
+		virtual ~I_Printable( void ) = default ;
 } ;
 
 #endif /* _I_PRINTABLE_HPP_ */

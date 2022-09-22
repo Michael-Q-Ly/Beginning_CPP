@@ -19,21 +19,5 @@
 void display( std::vector<Account *> const &accounts ) ;
 void deposit( std::vector<Account *> &accounts, double amount ) ;
 void withdraw( std::vector<Account *> &accounts, double amount ) ;
-std::ostream &operator<<( std::ostream &os, I_Printable const &obj ) ;
-
-/* // Utility helper functions for Savings Account class */
-/* void display( std::vector<Savings_Account> const &accounts ) ; */
-/* void deposit( std::vector<Savings_Account> &accounts, double amount ) ; */
-/* void withdraw( std::vector<Savings_Account> &accounts, double amount ) ; */
-
-/* // Utility helper functions for Checking Account class */
-/* void display( std::vector<Checking_Account> const & accounts ) ; */
-/* void deposit( std::vector<Checking_Account> &accounts, double amount ) ; */
-/* void withdraw( std::vector<Checking_Account> &accounts, double amount ) ; */
-
-/* // Utility helper functions for Checking Account class */
-/* void display( std::vector<Trust_Account> const & accounts ) ; */
-/* void deposit( std::vector<Trust_Account> &accounts, double amount ) ; */
-/* void withdraw( std::vector<Trust_Account> &accounts, double amount ) ; */
 
 #endif /* _ACCOUNT_UTIL_HPP_ */
