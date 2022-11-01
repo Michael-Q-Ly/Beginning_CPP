@@ -25,20 +25,3 @@ int Test::get_data( void ) const {
 Test::~Test( void ) {
 	std::cout << "Test destructor ( " << data << " )" << std::endl ;
 }
-
-/* ----------------------------------------------------------------------------*/
-/**
- * @brief			- Overloarded insertion operator
- *
- * @param os			- Output Stream
- * @param obj			- Test object
- *
- * @return std::ostream		- The Test object as output
- */
-/* ------------------------------------------------------------------------------------*/
-std::ostream &operator<<( std::ostream &os, Test const &obj ) {
-	os.precision( 2 ) ;
-	os << std::fixed ;
-	os << obj.data ;
-	return os ;
-}

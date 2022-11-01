@@ -43,9 +43,7 @@ int main( int argc, char *argv[] ) {
  */
 /* ------------------------------------------------------------------------------------*/
 static std::unique_ptr<std::vector<std::shared_ptr<Test>>> make( void ) {
-	std::unique_ptr<std::vector<std::shared_ptr<Test>>> vec_ptr = std::make_unique<std::vector<std::shared_ptr<Test>>>() ;
-	
-	return vec_ptr ;
+	return std::make_unique<std::vector<std::shared_ptr<Test>>>() ;
 }
 
 /* ----------------------------------------------------------------------------*/
@@ -78,8 +76,8 @@ static void fill( std::vector<std::shared_ptr<Test>> &vec, int num ) {
 static void display( std::vector<std::shared_ptr<Test>> const &vec ) {
 	std::cout << "Displaying vector data" << std::endl ;
 	std::cout << "========================" << std:: endl ;
-	for ( size_t i{0} ; i < vec.size() ; i++ ) {
-		std::cout << *(std::shared_ptr<Test>)vec.at(i) << std::endl ;
+	for (auto const &ptr : vec) {
+		std::cout << ptr->get_data() << std::endl ;
 	}
 	std::cout << "========================" << std:: endl ;
 }
