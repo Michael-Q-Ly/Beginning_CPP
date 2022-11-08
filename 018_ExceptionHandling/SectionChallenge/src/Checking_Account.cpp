@@ -42,6 +42,7 @@ bool Checking_Account::deposit( double amount ) {
 /* ---------------------------------*/
 bool Checking_Account::withdraw( double amount ) {
         if ( balance < ( amount + flat_rate ) ) {
+		throw InsufficientFundsException{} ;
                 std::cout << "Not enough money in bank account!" << std::endl ;
                 return false ;
         }

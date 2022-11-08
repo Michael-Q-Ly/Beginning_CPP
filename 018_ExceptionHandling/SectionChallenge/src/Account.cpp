@@ -6,7 +6,6 @@
  * @date 2022-09-21
  */
 #include "Account.hpp"
-#include "IllegalBalanceException.hpp"
 
 /* -------------------------------*/
 /**
@@ -61,7 +60,7 @@ bool Account::withdraw( double amount ) {
                 return true ;
         }
         else {
-                return false ;
+		throw InsufficientFundsException{} ;
         }
 }
 

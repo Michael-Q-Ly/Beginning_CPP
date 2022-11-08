@@ -8,6 +8,10 @@
 #ifndef _ACCOUNT_HPP_
 #define _ACCOUNT_HPP_
 #include "I_Printable.hpp"
+
+#include "IllegalBalanceException.hpp"
+#include "InsufficientFundsException.hpp"
+
 #include <iostream>
 #include <string>
 
