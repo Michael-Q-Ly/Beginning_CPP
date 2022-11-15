@@ -187,22 +187,13 @@ void print_tour_labels( void ) {
  */
 /* ------------------------------------------------------------------------------------*/
 void print_tour_info( struct Tours tours ) {
-	for ( auto country : tours.countries ) { // Loop through the countries
-		std::cout << std::setw( COUNTRY_WIDTH ) << std::left << country.name ;
-		for ( auto city : country.cities ) {	// Loop through the cities for each country
-			if ( city.name != country.cities.at( 0 ).name ) {
-				std::cout << std::setw( COUNTRY_WIDTH )		<< std::setfill(' ')	<< "" ;
-				std::cout << std::setw( CITY_WIDTH )		<< std::left		<< city.name
-					  << std::setw( POPULATION_WIDTH )	<< std::right		<< city.population
-					  << std::setw( COST_WIDTH )		<< std::fixed		<< std::setprecision( 2 ) << city.cost
-					  << std::endl ;
-			}
-			else { // First city in the list
-				std::cout << std::setw( CITY_WIDTH )		<< std::left		<< city.name
-					  << std::setw( POPULATION_WIDTH )	<< std::right		<< city.population
-					  << std::setw( COST_WIDTH )		<< std::fixed		<< std::setprecision( 2 ) << city.cost
-					  << std::endl ;
-			}
+	for ( auto country : tours.countries ) {
+		for ( size_t i {0} ; i < country.cities.size() ; i++ ) {
+			std::cout << std::setw( COUNTRY_WIDTH )		<< std::left		<< ( ( i != 0 ) ? "" : country.name ) // Display country name or not?
+				  << std::setw( CITY_WIDTH )		<< std::left		<< country.cities.at(i).name
+				  << std::setw( POPULATION_WIDTH )	<< std::right		<< country.cities.at(i).population
+				  << std::setw( COST_WIDTH )		<< std::fixed		<< std::setprecision( 2 ) << country.cities.at(i).cost
+				  << std::endl ;
 		}
 	}
 }
