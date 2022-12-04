@@ -23,8 +23,25 @@ enum exit_error {
 	FILE_DNE
 } ;
 
+/*-----------------------------------------------------------------------------
+ * Function prototypes 
+ *-----------------------------------------------------------------------------*/
+void print_header( void ) ;
+void print_footer( double average ) ;
+void print_student( std::string const &student, int score ) ;
+int process_response( std::string const &response, std::string const &KEY ) ;
+
+/*-----------------------------------------------------------------------------
+ * MAIN 
+ *-----------------------------------------------------------------------------*/
 int main( int argc, char *argv[] ) {
 	std::ifstream in_file ;
+	std::string line {} ;
+	std::string KEY {} ;
+	std::string student_name {} ;
+	std::string response {} ;
+	uint8_t score_aggregate {};
+	uint8_t num_students {} ;
 
 	std::string file_grades {"grades.txt"} ;
 	in_file.open( file_grades ) ;
@@ -33,46 +50,56 @@ int main( int argc, char *argv[] ) {
 		std::exit ( exit_error::FILE_DNE ) ;
 	}
 
-	std::string line {} ;
-	std::string KEY {} ;
+	in_file >> KEY ;
 
-	std::getline( in_file, KEY ) ;
+	print_header() ;
 
-	uint8_t count {1} ;
-	uint8_t score_aggregate {};
-	uint8_t num_students {} ;
-	std::cout << std::setw( 20 ) << std::left << "Student"
-		  << "Score" << std::endl
-		  << "-------------------------"
-		  << std::endl ;
-	while( std::getline( in_file, line ) ) {
-		// On even-numbered lines, check if answers match with KEY
-		if ( !( count % 2 ) ) {
-			int score {0} ;
-			// Compare each letter
-			for ( size_t i {} ; i < line.length() ; i++ ) {
-				if ( line[i]  == KEY[i] ) {
-					score++ ;
-				}
-			}
-			// Print out score out of how many questions there were in they KEY
-			std::cout << score << "/" << KEY.length() << std::endl ;
-			score_aggregate += score ;
-		}
-		// else print out student name
-		else {
-			num_students++ ;
-			std::cout << std::setw( 20 ) << std::left << line ;
-		}
-		count++ ;
+	while( in_file >> student_name >> response ) {
+		num_students++ ;
+		int score {process_response( response, KEY )} ;
+		score_aggregate += score ;
+		print_student( student_name, score ) ;
 	}
-	std::cout << "-------------------------" << std:: endl ;
-	std::cout << std::setw( 20 ) << "Average: " ;
 	if ( num_students != 0 ) {
-		double student_average {score_aggregate / (double)num_students} ;
-		std::cout << student_average << std::endl ;
+		double student_average {static_cast<double>( score_aggregate ) / num_students} ;
+		print_footer( student_average ) ;
 	}
 
 	std::cout << std::endl ;
 	return 0 ;
+}
+
+/* ----------------------------------------------------------------------------*/
+/**
+ * @brief	Prints header for grade averages
+ */
+/* ------------------------------------------------------------------------------------*/
+void print_header( void ) {
+	std::cout << std::setw( 15 ) << std::left << "Student"
+		  << std::setw( 5 ) << "Score" << std::endl ;
+	std::cout << std::setw( 20 ) << std::setfill( '-' ) << "" << std::endl ;
+	std::cout << std::setfill( ' ' ) ;
+}
+
+void print_footer( double average ) {
+	std::cout << std::setw( 20 ) << std::setfill( '-' ) << "" <<  std::endl ;
+	std::cout << std::setfill( ' ' ) ;
+	std::cout << std::left << std::setw( 15 ) << "Average: " ;
+	std::cout << std::right << std::setw( 5 ) << average << std::endl ;
+}
+
+void print_student( std::string const &student, int score ) {
+	std::cout << std::setprecision( 1 ) << std::fixed ;
+	std::cout << std::setw( 15 ) << std::left << student
+		  << std::setw( 5 ) << std::right << score << std::endl ;
+}
+
+int process_response( std::string const &response, std::string const &KEY ) {
+	int score {0} ;
+	for ( size_t i {} ; i < response.length() ; i++ ) {
+		if ( response.at( i )  == KEY.at( i ) ) {
+			score++ ;
+		}
+	}
+	return score ;
 }
