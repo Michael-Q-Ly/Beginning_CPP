@@ -65,6 +65,8 @@ int main( int argc, char *argv[] ) {
 		print_footer( student_average ) ;
 	}
 
+	in_file.close() ;
+
 	std::cout << std::endl ;
 	return 0 ;
 }
